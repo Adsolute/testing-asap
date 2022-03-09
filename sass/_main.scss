@@ -1,8 +1,17 @@
 // ! @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
 
-.container {
-	max-width: 1280px;
-}
+// <ОСНОВНОЙ ШРИФТ>
+$fontfamily: "PT sans";
+// <ОСНОВНОЙ ШРИФТ>
+
+// <ПЕРЕМЕННЫЕ>
+$minwidth: 320px;
+$mw: 880px;
+$mbr1: $mw + 12;
+$mbr2: 992;
+$mbr3: 767;
+$mbr4: 479;
+// <ПЕРЕМЕННЫЕ>
 
 // ===========================ПЕРВЫЙ БЛОК============================= //
 
