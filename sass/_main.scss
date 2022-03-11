@@ -1,12 +1,24 @@
 // ! @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
+
+// <МИКСИН> //
+@mixin flexbox {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 0px;
+}
+// <МИКСИН> //
 
 // <ОСНОВНОЙ ШРИФТ>
-$fontfamily: "PT sans";
+$fontfamily: "PT Sans";
 // <ОСНОВНОЙ ШРИФТ>
 
 // <ПЕРЕМЕННЫЕ>
 $minwidth: 320px;
-$mw: 880px;
+$mw: 1200px;
 $mbr1: $mw + 12;
 $mbr2: 992;
 $mbr3: 767;
