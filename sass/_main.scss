@@ -1,29 +1,65 @@
 // ! @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
+// @import url(https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap);
 
-// <МИКСИН> //
-@mixin flexbox {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms;
-	display: -webkit-flex;
-	display: flex;
-	font-size: 0px;
+// <ОБОЛОЧКА>
+.wrapper {
+	@include flexbox;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
 }
-// <МИКСИН> //
+[class*="__container"] {
+	max-width: 1057px;
+	margin: 0 auto;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+// <ОБОЛОЧКА>
 
-// <ОСНОВНОЙ ШРИФТ>
-$fontfamily: "PT Sans";
-// <ОСНОВНОЙ ШРИФТ>
+// ============================HEADER================================= //
+.header {
+	&__container {
+		@include flexbox;
+		align-items: center;
+		min-height: 162px;
+	}
 
-// <ПЕРЕМЕННЫЕ>
-$minwidth: 320px;
-$mw: 1200px;
-$mbr1: $mw + 12;
-$mbr2: 992;
-$mbr3: 767;
-$mbr4: 479;
-// <ПЕРЕМЕННЫЕ>
+	&__logo {
+	}
+
+	&__menu {
+		@include flexbox;
+		justify-content: right;
+	}
+
+	&__button {
+		flex: 1 1 252px;
+	}
+}
+.menu {
+	&__list {
+		flex: 1 1 auto;
+	}
+
+	&__item {
+	}
+
+	&__link {
+	}
+}
+.button {
+	font-size: 16px;
+	line-height: 20px;
+	text-decoration: uppercase;
+	&__blue {
+		background-color: rgb(72, 100, 255);
+		color: white;
+	}
+}
+
+// ============================HEADER================================= //
 
 // ===========================ПЕРВЫЙ БЛОК============================= //
 

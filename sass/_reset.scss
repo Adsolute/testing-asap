@@ -1,3 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700,800&display=swap);
+
+// <МИКСИН> //
+@mixin flexbox {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 14px;
+}
+// <МИКСИН> //
+
+// <ОСНОВНОЙ ШРИФТ>
+$fontfamily: Rubik;
+// <ОСНОВНОЙ ШРИФТ>
+
+// <ПЕРЕМЕННЫЕ>
+$minwidth: 320px;
+$mw: 1057px;
+$mbr1: $mw + 12;
+$mbr2: 992;
+$mbr3: 767;
+$mbr4: 479;
+// <ПЕРЕМЕННЫЕ>
+
 // <ОБНУЛЕНИЕ>
 * {
 	padding: 0;
@@ -41,19 +67,18 @@ body {
 body {
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
-	font-family: $fontfamily;
+	font-size: 14 px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	&.lock {
-		overflow: hidden;
-		@media (max-width: $mbr3+px) {
-			width: 100%;
-			position: fixed;
-			overflow: hidden;
-		}
-	}
+	// &.lock {
+	// 	overflow: hidden;
+	// 	@media (max-width: $mbr3+px) {
+	// 		width: 100%;
+	// 		position: fixed;
+	// 		overflow: hidden;
+	// 	}
+	// }
 }
 
 input,
@@ -75,6 +100,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
+	color: #000;
 }
 a:hover {
 	text-decoration: none;
@@ -96,31 +122,3 @@ h6 {
 	font-weight: inherit;
 }
 // <ОБНУЛЕНИЕ>
-
-// <ОБОЛОЧКА>
-.wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	&.loaded {
-	}
-}
-// <ОБОЛОЧКА>
-
-// <ОСНОВНАЯ СЕТКА> //
-.container {
-	max-width: $mw + px;
-	margin: 0 auto;
-	width: 100%;
-	@media (max-width: $mw + px) {
-		max-width: 970px;
-	}
-	@media (max-width: $mbr1 + px) {
-		max-width: 750px;
-	}
-	@media (max-width: $mw + px) {
-		max-width: none;
-		padding: 0, 10px;
-	}
-}
-// <ОСНОВНАЯ СЕТКА> //
