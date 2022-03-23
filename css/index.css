@@ -1,89 +1,89 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:400,500,700,800&display=swap);
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
 :active {
-	outline: none;
+  outline: none;
 }
 
 a:focus,
 a:active {
-	outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-	display: block;
+  display: block;
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	min-width: 320px;
-	position: relative;
-	font-size: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  font-size: 100%;
 }
 
 body {
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14 px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14 px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-	font-family: Rubik;
+  font-family: Rubik;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a,
 a:visited {
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -92,79 +92,75 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .wrapper {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 14px;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
 
-[class*="__container"] {
-	max-width: 1057px;
-	margin: 0 auto;
-	width: 100%;
-	left: 0;
-	top: 0;
+[class*=__container] {
+  max-width: 1057px;
+  margin: 0 auto;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .header__container {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 14px;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	min-height: 162px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 162px;
 }
-
 .header__menu {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 14px;
-	-webkit-box-pack: right;
-	-ms-flex-pack: right;
-	justify-content: right;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
-
 .header__button {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 252px;
-	flex: 1 1 252px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 252px;
+          flex: 1 1 252px;
 }
 
 .menu__list {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
-
 .button {
-	font-size: 16px;
-	line-height: 20px;
-	-webkit-text-decoration: uppercase;
-	text-decoration: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
 }
-
 .button__blue {
-	background-color: #4864ff;
-	color: white;
+  background-color: #4864ff;
+  color: white;
 }
